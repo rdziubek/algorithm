@@ -1,4 +1,4 @@
-def szyfruj(key: int, content: list):
+def cipher(key: int, content: list):
     ciphered = []
 
     for ch in content:
@@ -14,4 +14,4 @@ def szyfruj(key: int, content: list):
     return ciphered
 
 
-print(szyfruj(2, 'xyz'))
+print(cipher(2, list('xyz')))

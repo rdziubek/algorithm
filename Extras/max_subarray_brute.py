@@ -7,7 +7,7 @@ def force_find(array):
         current = 0
 
         for j in range(i, len(array)):
-            current += array[j] 
+            current += array[j]
         
             if current > biggest: 
                 biggest = current

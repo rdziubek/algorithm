@@ -7,7 +7,7 @@ def exponentiate(number, power):
     return total
 
 
-def change_base(number: str, base):
+def change_base(number: list, base):
     result = 0
 
     for i in range(len(number)):
@@ -16,4 +16,4 @@ def change_base(number: str, base):
     return result
 
 
-print(change_base('101', 2))
+print(change_base(list('101'), 2))
