@@ -1,13 +1,17 @@
 def decompose(n):
+    result = []
+
     k = 2
     while n > 1 and k * k <= n:
         while n % k == 0:
-            print(k)
+            result += [k]
             n //= k
         k += 1
     if n > 1:
-        print(n)
+        result += [n]
+
+    return result
 
 
-decompose(100)
+print(decompose(100))
 
