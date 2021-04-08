@@ -1,13 +1,10 @@
 def exponentiate(number, power):
-    if power == 0:
-        return 1
+    total = 1
 
-    result = number
+    for i in range(power):
+        total *= number
 
-    for i in range(power - 1):
-        result *= number
-
-    return result
+    return total
 
 
 def change_base(number: str, base):
