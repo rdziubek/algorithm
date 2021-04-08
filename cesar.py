@@ -14,5 +14,4 @@ def szyfruj(key: int, content: list):
     return ciphered
 
 
-print(szyfruj(2, ['xyz']))
-zip()
+print(szyfruj(2, 'xyz'))
