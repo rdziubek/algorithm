@@ -1,4 +1,4 @@
-def czy_pierwsza(n):
+def is_prime(n):
     if n < 2:
         return False
     k = 2
@@ -13,5 +13,4 @@ file = open('in/in_czy_pierwsza.txt')
 rows = [int(row.strip()) for row in file.readlines() if row.strip()]
 
 for row in rows:
-    print(row, czy_pierwsza(row))
-
+    print(row, is_prime(row))
