@@ -5,10 +5,9 @@ def nww(a, b):
 
 
 def nwd(a, b):
-    while b != 0:
-        previous_b = b
-        b = a % b
-        a = previous_b
+    if b != 0:
+        return nwd(b, a % b)
+
     return a
 
 
