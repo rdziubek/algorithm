@@ -14,4 +14,3 @@ def decompose(n):
 
 
 print(decompose(100))
-
