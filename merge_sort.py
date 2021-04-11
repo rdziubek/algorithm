@@ -38,5 +38,5 @@ def merge(array, left, middle, right):
         array[left + i] = merged[i]
 
 
-array = [1, 5, 3, 1, 0, 2, 1]
+array = [3, 2, 11, -1, 0]
 print(sort(array, 0, len(array)))
