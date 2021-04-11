@@ -7,7 +7,7 @@ def sort(array, left, right):
     sort(array, left, middle)
     sort(array, middle, right)
 
-    array = merge(array, left, middle, right)
+    merge(array, left, middle, right)
 
     return array
 
@@ -34,8 +34,9 @@ def merge(array, left, middle, right):
         merged += [array[j]]
         j += 1
 
-    return merged
+    for i in range(len(merged)):
+        array[left + i] = merged[i]
 
 
-array = [10, 1]
+array = [1, 5, 3, 1, 0, 2, 1]
 print(sort(array, 0, len(array)))
