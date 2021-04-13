@@ -3,3 +3,5 @@ with open('in/galerie_przyklad.txt') as file:
 
 for row in rows:
     kraj = row[0]
+    miasto = row[1]
+    wymiary = row[2:]
