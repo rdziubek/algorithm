@@ -9,8 +9,4 @@ def is_prime(n):
     return True
 
 
-file = open('in/in_czy_pierwsza.txt')
-rows = [int(row.strip()) for row in file.readlines() if row.strip()]
-
-for row in rows:
-    print(row, is_prime(row))
+print(is_prime(13))
