@@ -1,3 +1,9 @@
+"""
+
+O(n²)
+"""
+
+
 def sort(array):
     for i in range(len(array) - 1):
         min_index = i

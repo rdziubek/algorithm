@@ -2,6 +2,8 @@
 NOTE:
     Indexing has to start from the second index, so as not to divide number by 1 when adding two divisors.
     While instead of a for loop is used as for loop cant be constructed without using math.sqrt
+
+O(√n)
 """
 
 

@@ -1,4 +1,10 @@
-def make_change(amount):
+"""
+
+O(mn)
+"""
+
+
+def change(amount):
     coins = [1, 2, 5]
     coins_used = 0
 
@@ -15,4 +21,4 @@ def make_change(amount):
     return coins_used
 
 
-print(make_change(6))
+print(change(6))

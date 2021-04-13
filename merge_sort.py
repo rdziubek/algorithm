@@ -1,3 +1,9 @@
+"""
+
+O(n log n)
+"""
+
+
 def merge(array, left, middle, right):
     i = left
     j = middle

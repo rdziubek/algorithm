@@ -1,3 +1,9 @@
+"""
+
+O(n)
+"""
+
+
 def fibonacci(count):
     a = 0
     b = 1

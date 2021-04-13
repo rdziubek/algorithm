@@ -1,3 +1,9 @@
+"""
+
+O(mn)
+"""
+
+
 def search(text, pattern):
     results = []
 

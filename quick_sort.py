@@ -1,6 +1,8 @@
 """
 NOTE:
     `left < j` and `right > i` checks make sure there is something to actually sort
+
+O(n²)
 """
 
 

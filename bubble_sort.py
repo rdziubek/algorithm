@@ -1,3 +1,9 @@
+"""
+
+O(n²)
+"""
+
+
 def sort(array):
     for i in range(len(array)):
         for j in range(1, len(array) - i):

@@ -1,3 +1,9 @@
+"""
+
+O(log n)
+"""
+
+
 def change_base(number, base):
     stack = []
 

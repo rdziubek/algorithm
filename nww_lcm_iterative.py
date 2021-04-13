@@ -1,4 +1,9 @@
-# (a * b) / NWD
+"""
+(a * b) / NWD
+
+O(log n)
+"""
+
 
 def nww(a, b):
     return a / nwd(a, b) * b

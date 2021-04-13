@@ -1,8 +1,14 @@
-def cipher(key: int, content):
+"""
+
+O(n)
+"""
+
+
+def cipher(key: int, text):
     result = []
 
-    for i in range(len(content)):
-        candidate: int = ord(content[i]) + key
+    for i in range(len(text)):
+        candidate: int = ord(text[i]) + key
 
         if candidate > ord('z'):
             candidate -= 26

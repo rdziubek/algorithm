@@ -4,6 +4,12 @@
 3. Put into buckets.
 4. Sort each bucket.
 5. Print buckets.
+
+NOTE:
+    `array[i] / size` is not floored (by integer division, as opposed to
+    the used integer cast) so as not to hinder negative value handling
+
+O(n²)
 """
 
 import insertion_sort

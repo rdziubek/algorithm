@@ -1,3 +1,9 @@
+"""
+
+O(m + n)
+"""
+
+
 def anagram(word, word2):
     if len(word) != len(word2):
         return False

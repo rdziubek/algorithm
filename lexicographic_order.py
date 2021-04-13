@@ -2,7 +2,7 @@
 1. Loop through all.
     a. Loop through all, swapping, omitting already swapped.
 
-O(n^2) ; depends on sort used
+O(n²) ; depends on sort used
 """
 
 

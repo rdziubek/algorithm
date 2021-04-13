@@ -1,3 +1,9 @@
+"""
+
+O(log n)
+"""
+
+
 def exponentiate(base, power):
     result = 1
 

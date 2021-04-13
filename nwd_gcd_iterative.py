@@ -1,3 +1,9 @@
+"""
+
+O(log n)
+"""
+
+
 def nwd(a, b):
     while b != 0:
         previous_b = b

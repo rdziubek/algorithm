@@ -1,3 +1,9 @@
+"""
+
+O(log n)
+"""
+
+
 def bisect(a, b, error):
     middle = (a + b) / 2
 

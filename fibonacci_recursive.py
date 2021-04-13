@@ -1,6 +1,8 @@
 """
 NOTE:
     Only gives n-th number
+
+O(2ⁿ)
 """
 
 

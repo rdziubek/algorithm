@@ -2,6 +2,8 @@
     KRYPT
     OANAL   ;   2, 1, 4, 0, 3   ->  YNARAZTLKOIPA
     IZA
+
+O(n) — matrix transposition (√n by √n)
 """
 
 

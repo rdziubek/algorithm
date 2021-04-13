@@ -1,4 +1,10 @@
-def decompose(n):
+"""
+
+O(√n)
+"""
+
+
+def factorise(n):
     result = []
 
     k = 2
@@ -13,4 +19,4 @@ def decompose(n):
     return result
 
 
-print(decompose(100))
+print(factorise(100))

@@ -5,6 +5,8 @@ NOTE:
 
     Inserted element is placed at j + 1 instead of j to compensate
     for j's decrementation occurring in the while loop.
+
+O(n²)
 """
 
 
