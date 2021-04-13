@@ -1,7 +1,3 @@
-def f(x):
-    return x + 2.1
-
-
 def bisect(a, b, error):
     middle = (a + b) / 2
 
@@ -18,6 +14,10 @@ def bisect(a, b, error):
     if f(b) == 0:
         return b
     return middle
+
+
+def f(x):
+    return x + 2.1
 
 
 print(bisect(-4, 4, 0.001))

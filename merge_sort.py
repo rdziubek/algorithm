@@ -1,17 +1,3 @@
-def sort(array, left, right):
-    if right - left <= 1:
-        return
-
-    middle = (left + right) // 2
-
-    sort(array, left, middle)
-    sort(array, middle, right)
-
-    merge(array, left, middle, right)
-
-    return array
-
-
 def merge(array, left, middle, right):
     i = left
     j = middle
@@ -36,6 +22,20 @@ def merge(array, left, middle, right):
 
     for i in range(len(merged)):
         array[left + i] = merged[i]
+
+
+def sort(array, left, right):
+    if right - left <= 1:
+        return
+
+    middle = (left + right) // 2
+
+    sort(array, left, middle)
+    sort(array, middle, right)
+
+    merge(array, left, middle, right)
+
+    return array
 
 
 array = [3, 2, 11, -1, 0]
