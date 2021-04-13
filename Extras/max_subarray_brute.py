@@ -8,12 +8,12 @@ def force_find(array):
 
         for j in range(i, len(array)):
             current += array[j]
-        
-            if current > biggest: 
+
+            if current > biggest:
                 biggest = current
                 biggest_start = i
                 biggest_end = j
-    
+
     print(biggest_start, biggest_end)
     return biggest
 
