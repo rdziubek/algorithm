@@ -3,10 +3,10 @@
 <title>prime_number.py</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <style type="text/css">
-.s0 { color: #000080; font-weight: bold;}
+.s0 { color: #808080; font-style: italic;}
 .s1 { color: #000000;}
-.s2 { color: #0000ff;}
-.s3 { color: #008080; font-weight: bold;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #0000ff;}
 .ln { color: #999999; font-weight: normal; font-style: normal; }
 </style>
 </head>
@@ -16,22 +16,24 @@
 <font face="Arial, Helvetica" color="#000000">
 prime_number.py</font>
 </center></td></tr></table>
-<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">def </span>is_prime(n):
-<a name="l2"><span class="ln">2    </span></a>    <span class="s0">if </span>n &lt; <span class="s2">2</span>:
-<a name="l3"><span class="ln">3    </span></a>        <span class="s0">return False</span>
-<a name="l4"><span class="ln">4    </span></a>    k = <span class="s2">2</span>
-<a name="l5"><span class="ln">5    </span></a>    <span class="s0">while </span>k * k &lt;= n:
-<a name="l6"><span class="ln">6    </span></a>        <span class="s0">if </span>n % k == <span class="s2">0</span>:
-<a name="l7"><span class="ln">7    </span></a>            <span class="s0">return False</span>
-<a name="l8"><span class="ln">8    </span></a>        k += <span class="s2">1</span>
-<a name="l9"><span class="ln">9    </span></a>    <span class="s0">return True</span>
-<a name="l10"><span class="ln">10   </span></a>
-<a name="l11"><span class="ln">11   </span></a>
-<a name="l12"><span class="ln">12   </span></a>file = open(<span class="s3">'in/in_czy_pierwsza.txt'</span>)
-<a name="l13"><span class="ln">13   </span></a>rows = [int(row.strip()) <span class="s0">for </span>row <span class="s0">in </span>file.readlines() <span class="s0">if </span>row.strip()]
-<a name="l14"><span class="ln">14   </span></a>
-<a name="l15"><span class="ln">15   </span></a><span class="s0">for </span>row <span class="s0">in </span>rows:
-<a name="l16"><span class="ln">16   </span></a>    print(row, is_prime(row))
-<a name="l17"><span class="ln">17   </span></a></pre>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">&quot;&quot;&quot; 
+<a name="l2"><span class="ln">2    </span></a> 
+<a name="l3"><span class="ln">3    </span></a>O(√n) 
+<a name="l4"><span class="ln">4    </span></a>&quot;&quot;&quot;</span>
+<a name="l5"><span class="ln">5    </span></a>
+<a name="l6"><span class="ln">6    </span></a>
+<a name="l7"><span class="ln">7    </span></a><span class="s2">def </span>is_prime(n):
+<a name="l8"><span class="ln">8    </span></a>    <span class="s2">if </span>n &lt; <span class="s3">2</span>:
+<a name="l9"><span class="ln">9    </span></a>        <span class="s2">return False</span>
+<a name="l10"><span class="ln">10   </span></a>    k = <span class="s3">2</span>
+<a name="l11"><span class="ln">11   </span></a>    <span class="s2">while </span>k * k &lt;= n:
+<a name="l12"><span class="ln">12   </span></a>        <span class="s2">if </span>n % k == <span class="s3">0</span>:
+<a name="l13"><span class="ln">13   </span></a>            <span class="s2">return False</span>
+<a name="l14"><span class="ln">14   </span></a>        k += <span class="s3">1</span>
+<a name="l15"><span class="ln">15   </span></a>    <span class="s2">return True</span>
+<a name="l16"><span class="ln">16   </span></a>
+<a name="l17"><span class="ln">17   </span></a>
+<a name="l18"><span class="ln">18   </span></a>print(is_prime(<span class="s3">13</span>))
+<a name="l19"><span class="ln">19   </span></a></pre>
 </body>
 </html>

@@ -5,5 +5,5 @@ def euclid(a, b):
         a = temp
     return a
 
-print(euclid(6, 4))
 
+print(euclid(6, 4))

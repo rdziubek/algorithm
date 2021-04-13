@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>bucket_sort.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #0000ff;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+bucket_sort.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">&quot;&quot;&quot; 
+<a name="l2"><span class="ln">2    </span></a>1. Determine max value. 
+<a name="l3"><span class="ln">3    </span></a>2. Make buckets. 
+<a name="l4"><span class="ln">4    </span></a>3. Put into buckets. 
+<a name="l5"><span class="ln">5    </span></a>4. Sort each bucket. 
+<a name="l6"><span class="ln">6    </span></a>5. Print buckets. 
+<a name="l7"><span class="ln">7    </span></a> 
+<a name="l8"><span class="ln">8    </span></a>NOTE: 
+<a name="l9"><span class="ln">9    </span></a>    `array[i] / size` is not floored (by integer division, as opposed to 
+<a name="l10"><span class="ln">10   </span></a>    the used integer cast) so as not to hinder negative value handling 
+<a name="l11"><span class="ln">11   </span></a> 
+<a name="l12"><span class="ln">12   </span></a>O(n²) 
+<a name="l13"><span class="ln">13   </span></a>&quot;&quot;&quot;</span>
+<a name="l14"><span class="ln">14   </span></a>
+<a name="l15"><span class="ln">15   </span></a><span class="s2">import </span>insertion_sort
+<a name="l16"><span class="ln">16   </span></a>
+<a name="l17"><span class="ln">17   </span></a>
+<a name="l18"><span class="ln">18   </span></a><span class="s2">def </span>sort(array, max_value):
+<a name="l19"><span class="ln">19   </span></a>    size = max_value / len(array)
+<a name="l20"><span class="ln">20   </span></a>
+<a name="l21"><span class="ln">21   </span></a>    buckets = []
+<a name="l22"><span class="ln">22   </span></a>    <span class="s2">for </span>_ <span class="s2">in </span>range(len(array)):
+<a name="l23"><span class="ln">23   </span></a>        buckets += [[]]
+<a name="l24"><span class="ln">24   </span></a>
+<a name="l25"><span class="ln">25   </span></a>    <span class="s2">for </span>i <span class="s2">in </span>range(len(array)):
+<a name="l26"><span class="ln">26   </span></a>        j = int(array[i] / size)
+<a name="l27"><span class="ln">27   </span></a>        <span class="s2">if </span>j != len(array):
+<a name="l28"><span class="ln">28   </span></a>            buckets[j] += [array[i]]
+<a name="l29"><span class="ln">29   </span></a>        <span class="s2">else</span>:
+<a name="l30"><span class="ln">30   </span></a>            buckets[len(array) - <span class="s3">1</span>] += [array[i]]
+<a name="l31"><span class="ln">31   </span></a>
+<a name="l32"><span class="ln">32   </span></a>    <span class="s2">for </span>i <span class="s2">in </span>range(len(array)):
+<a name="l33"><span class="ln">33   </span></a>        insertion_sort.sort(buckets[i])
+<a name="l34"><span class="ln">34   </span></a>
+<a name="l35"><span class="ln">35   </span></a>    result = []
+<a name="l36"><span class="ln">36   </span></a>    <span class="s2">for </span>i <span class="s2">in </span>range(len(array)):
+<a name="l37"><span class="ln">37   </span></a>        result = result + buckets[i]
+<a name="l38"><span class="ln">38   </span></a>    <span class="s2">return </span>result
+<a name="l39"><span class="ln">39   </span></a>
+<a name="l40"><span class="ln">40   </span></a>
+<a name="l41"><span class="ln">41   </span></a>array = [<span class="s3">3</span>, <span class="s3">2</span>, <span class="s3">11</span>, -<span class="s3">1</span>, <span class="s3">0</span>]
+<a name="l42"><span class="ln">42   </span></a>print(sort(array, max(array)))
+<a name="l43"><span class="ln">43   </span></a></pre>
+</body>
+</html>
