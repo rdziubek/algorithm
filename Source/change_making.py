@@ -6,19 +6,19 @@ O(mn)
 
 def change(amount):
     coins = [1, 2, 5]
-    coins_used = 0
+    count = 0
 
     while amount > 0:
-        spent = 0
+        coin = 0
 
         for i in range(len(coins)):
-            if amount >= coins[i] >= spent:
-                spent = coins[i]
+            if amount >= coins[i] > coin:
+                coin = coins[i]
 
-        amount -= spent
-        coins_used += 1
+        amount -= coin
+        count += 1
 
-    return coins_used
+    return count
 
 
 print(change(6))
