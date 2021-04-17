@@ -1,3 +1,9 @@
+"""
+
+O(n log n)
+"""
+
+
 def sieve(limit):
     array = [True] * (limit + 1)
 
