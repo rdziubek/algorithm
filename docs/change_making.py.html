@@ -24,19 +24,19 @@ change_making.py</font>
 <a name="l6"><span class="ln">6    </span></a>
 <a name="l7"><span class="ln">7    </span></a><span class="s2">def </span>change(amount):
 <a name="l8"><span class="ln">8    </span></a>    coins = [<span class="s3">1</span>, <span class="s3">2</span>, <span class="s3">5</span>]
-<a name="l9"><span class="ln">9    </span></a>    coins_used = <span class="s3">0</span>
+<a name="l9"><span class="ln">9    </span></a>    count = <span class="s3">0</span>
 <a name="l10"><span class="ln">10   </span></a>
 <a name="l11"><span class="ln">11   </span></a>    <span class="s2">while </span>amount &gt; <span class="s3">0</span>:
-<a name="l12"><span class="ln">12   </span></a>        spent = <span class="s3">0</span>
+<a name="l12"><span class="ln">12   </span></a>        coin = <span class="s3">0</span>
 <a name="l13"><span class="ln">13   </span></a>
 <a name="l14"><span class="ln">14   </span></a>        <span class="s2">for </span>i <span class="s2">in </span>range(len(coins)):
-<a name="l15"><span class="ln">15   </span></a>            <span class="s2">if </span>amount &gt;= coins[i] &gt;= spent:
-<a name="l16"><span class="ln">16   </span></a>                spent = coins[i]
+<a name="l15"><span class="ln">15   </span></a>            <span class="s2">if </span>amount &gt;= coins[i] &gt; coin:
+<a name="l16"><span class="ln">16   </span></a>                coin = coins[i]
 <a name="l17"><span class="ln">17   </span></a>
-<a name="l18"><span class="ln">18   </span></a>        amount -= spent
-<a name="l19"><span class="ln">19   </span></a>        coins_used += <span class="s3">1</span>
+<a name="l18"><span class="ln">18   </span></a>        amount -= coin
+<a name="l19"><span class="ln">19   </span></a>        count += <span class="s3">1</span>
 <a name="l20"><span class="ln">20   </span></a>
-<a name="l21"><span class="ln">21   </span></a>    <span class="s2">return </span>coins_used
+<a name="l21"><span class="ln">21   </span></a>    <span class="s2">return </span>count
 <a name="l22"><span class="ln">22   </span></a>
 <a name="l23"><span class="ln">23   </span></a>
 <a name="l24"><span class="ln">24   </span></a>print(change(<span class="s3">6</span>))
