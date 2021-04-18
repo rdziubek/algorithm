@@ -10,6 +10,9 @@ O(√n)
 def is_perfect(number):
     total = 1
 
+    if number == 1:
+        return False
+
     i = 2
     while i * i < number:
         if number % i == 0:
