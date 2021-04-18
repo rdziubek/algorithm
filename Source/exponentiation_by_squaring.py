@@ -1,4 +1,8 @@
 """
+NOTE:
+    Last bit is equal 1 when the modulus 2 of the number yields 1.
+    When it is such, returned number is multiplied by its base
+    besides squaring it.
 
 O(log n)
 """
