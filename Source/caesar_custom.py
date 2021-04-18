@@ -4,7 +4,7 @@ O(mn)
 """
 
 
-def cipher_custom(key: int, alphabet, text):
+def cipher_custom(key, alphabet, text):
     result = []
 
     for i in range(len(text)):
