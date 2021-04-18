@@ -1,4 +1,6 @@
 """
+Based on the definition a1 = 1, a2 = 1.
+
 NOTE:
     Only gives n-th number
 
