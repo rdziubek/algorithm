@@ -23,18 +23,18 @@ caesar.py</font>
 <a name="l4"><span class="ln">4    </span></a>&quot;&quot;&quot;</span>
 <a name="l5"><span class="ln">5    </span></a>
 <a name="l6"><span class="ln">6    </span></a>
-<a name="l7"><span class="ln">7    </span></a><span class="s2">def </span>cipher(key: int, text):
+<a name="l7"><span class="ln">7    </span></a><span class="s2">def </span>cipher(key, text):
 <a name="l8"><span class="ln">8    </span></a>    result = []
 <a name="l9"><span class="ln">9    </span></a>
 <a name="l10"><span class="ln">10   </span></a>    <span class="s2">for </span>i <span class="s2">in </span>range(len(text)):
-<a name="l11"><span class="ln">11   </span></a>        candidate: int = ord(text[i]) + key
+<a name="l11"><span class="ln">11   </span></a>        candidate = ord(text[i]) + key
 <a name="l12"><span class="ln">12   </span></a>
 <a name="l13"><span class="ln">13   </span></a>        <span class="s2">if </span>candidate &gt; ord(<span class="s3">'z'</span>):
 <a name="l14"><span class="ln">14   </span></a>            candidate -= <span class="s4">26</span>
 <a name="l15"><span class="ln">15   </span></a>        <span class="s2">elif </span>candidate &lt; ord(<span class="s3">'a'</span>):
 <a name="l16"><span class="ln">16   </span></a>            candidate += <span class="s4">26</span>
 <a name="l17"><span class="ln">17   </span></a>
-<a name="l18"><span class="ln">18   </span></a>        result.append(chr(candidate))
+<a name="l18"><span class="ln">18   </span></a>        result += [chr(candidate)]
 <a name="l19"><span class="ln">19   </span></a>
 <a name="l20"><span class="ln">20   </span></a>    <span class="s2">return </span>result
 <a name="l21"><span class="ln">21   </span></a>
