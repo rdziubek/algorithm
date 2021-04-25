@@ -2,7 +2,7 @@
 1. Loop through all.
     a. Loop through all, swapping, omitting already swapped.
 
-O() depends on sort used
+complexity and stability depends on sort used
 """
 
 import bubble_sort

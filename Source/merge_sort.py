@@ -1,6 +1,10 @@
 """
+NOTE:
+    'right' is exclusive.
+
 
 O(n log n)
+stable
 """
 
 

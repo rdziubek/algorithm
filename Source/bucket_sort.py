@@ -15,7 +15,7 @@ NOTE:
 
     Elements 'overflowing' the bucket size are put into the last container.
 
-O(n²)
+complexity and stability depends on sort used
 """
 
 import insertion_sort
