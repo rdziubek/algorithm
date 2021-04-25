@@ -6,8 +6,7 @@
 .s0 { color: #808080; font-style: italic;}
 .s1 { color: #000000;}
 .s2 { color: #000080; font-weight: bold;}
-.s3 { color: #0000ff;}
-.s4 { color: #008080; font-weight: bold;}
+.s3 { color: #008080; font-weight: bold;}
 .ln { color: #999999; font-weight: normal; font-style: normal; }
 </style>
 </head>
@@ -21,20 +20,17 @@ lexicographic_order.py</font>
 <a name="l2"><span class="ln">2    </span></a>1. Loop through all. 
 <a name="l3"><span class="ln">3    </span></a>    a. Loop through all, swapping, omitting already swapped. 
 <a name="l4"><span class="ln">4    </span></a> 
-<a name="l5"><span class="ln">5    </span></a>O(n²) ; depends on sort used 
+<a name="l5"><span class="ln">5    </span></a>O() depends on sort used 
 <a name="l6"><span class="ln">6    </span></a>&quot;&quot;&quot;</span>
 <a name="l7"><span class="ln">7    </span></a>
-<a name="l8"><span class="ln">8    </span></a>
-<a name="l9"><span class="ln">9    </span></a><span class="s2">def </span>order(array):
-<a name="l10"><span class="ln">10   </span></a>    <span class="s2">for </span>i <span class="s2">in </span>range(len(array)):
-<a name="l11"><span class="ln">11   </span></a>        <span class="s2">for </span>j <span class="s2">in </span>range(<span class="s3">1</span>, len(array) - i):
-<a name="l12"><span class="ln">12   </span></a>            <span class="s2">if </span>array[j - <span class="s3">1</span>] &gt; array[j]:
-<a name="l13"><span class="ln">13   </span></a>                array[j - <span class="s3">1</span>], array[j] = array[j], array[j - <span class="s3">1</span>]
+<a name="l8"><span class="ln">8    </span></a><span class="s2">import </span>bubble_sort
+<a name="l9"><span class="ln">9    </span></a>
+<a name="l10"><span class="ln">10   </span></a>
+<a name="l11"><span class="ln">11   </span></a><span class="s2">def </span>order(array):
+<a name="l12"><span class="ln">12   </span></a>    <span class="s2">return </span>bubble_sort.sort(array)
+<a name="l13"><span class="ln">13   </span></a>
 <a name="l14"><span class="ln">14   </span></a>
-<a name="l15"><span class="ln">15   </span></a>    <span class="s2">return </span>array
-<a name="l16"><span class="ln">16   </span></a>
-<a name="l17"><span class="ln">17   </span></a>
-<a name="l18"><span class="ln">18   </span></a>print(order([<span class="s4">'aab'</span>, <span class="s4">'aaa'</span>, <span class="s4">'aa'</span>, <span class="s4">'aaa'</span>]))
-<a name="l19"><span class="ln">19   </span></a></pre>
+<a name="l15"><span class="ln">15   </span></a>print(order([<span class="s3">'aab'</span>, <span class="s3">'aaa'</span>, <span class="s3">'aa'</span>, <span class="s3">'aaa'</span>]))
+<a name="l16"><span class="ln">16   </span></a></pre>
 </body>
 </html>
