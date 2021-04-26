@@ -1,6 +1,9 @@
 """
+1. Arrange elements relative to the pivot.
+2. Execute quick-sort on left and right sides of the array (pivot denotes the middle).
+
 NOTE:
-    `left < j` and `right > i` checks make sure there is something to actually sort.
+    `left < j` and `right > i` checks make sure there is something to further sort.
     `right` is inclusive.
 
 O(n²)
