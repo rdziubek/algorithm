@@ -6,6 +6,8 @@ NOTE:
     `left < j` and `right > i` checks make sure there is something to further sort.
     `right` is inclusive.
 
+    Recursive calls use `j` and `i` indices instead of a middle index (used in merge-sort).
+
 O(n²)
 not stable
 """
