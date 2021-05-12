@@ -5,7 +5,7 @@ O(mn)
 
 
 def search(text, pattern):
-    results = []
+    _results = []
 
     for i in range(len(text) - len(pattern)):
         found = True
@@ -16,6 +16,6 @@ def search(text, pattern):
                 break
 
         if found:
-            results.append(i)
+            _results.append(i)
 
-    return results
+    return _results

@@ -1,13 +1,16 @@
 """
+NOTE:
+    `_stack` stores converted number's 'digits'
+    so that these don't end up reversed.
 
 O(log n)
 """
 
 
 def change_base(number, base):
-    stack = []
+    _stack = []
 
     while number > 0:
-        stack = [number % base] + stack
+        _stack = [number % base] + _stack
         number //= base
-    return stack
+    return _stack

@@ -8,11 +8,11 @@ O(n)
 def fibonacci(count):
     a = 0
     b = 1
-    result = []
+    _result = []
 
     for i in range(count):
-        result += [b]
+        _result.append(b)
         b += a
         a = b - a
 
-    return result
+    return _result

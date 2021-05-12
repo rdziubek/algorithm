@@ -3,7 +3,7 @@
 2. Make buckets.
 3. Put into buckets.
 4. Sort each bucket.
-5. Print buckets.
+5. Empty buckets.
 
 NOTE:
     `array[i] / size` is not floored (by floor division, as opposed to
@@ -18,6 +18,8 @@ NOTE:
     `max_value` parameter is dependent on the array though its calculation should not be reliant
     on the algorithm, hence the separation.
 
+    Buckets are emptied so that no gaps / merged values are produced.
+
 complexity and stability depends on sort used
 """
 
@@ -29,19 +31,20 @@ def sort(array, max_value):
 
     buckets = []
     for _ in range(len(array)):
-        buckets += [[]]
+        buckets.append([])
 
     for i in range(len(array)):
         j = int(array[i] / span)
         if j != len(array):
-            buckets[j] += [array[i]]
+            buckets[j].append(array[i])
         else:
-            buckets[j - 1] += [array[i]]
+            buckets[j - 1].append(array[i])
 
     for i in range(len(array)):
         insertion_sort.sort(buckets[i])
 
     result = []
     for i in range(len(array)):
-        result += buckets[i]
+        result.extend(buckets[i])
+
     return result

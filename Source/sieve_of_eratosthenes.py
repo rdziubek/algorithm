@@ -16,9 +16,9 @@ def sieve(limit):
                 array[j] = False
         i += 1
 
-    result = []
+    _result = []
     for i in range(2, len(array)):
         if array[i] is True:
-            result += [i]
+            _result.append(i)
 
-    return result
+    return _result

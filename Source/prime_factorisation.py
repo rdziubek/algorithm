@@ -5,15 +5,15 @@ O(√n)
 
 
 def factorise(number):
-    result = []
+    _result = []
 
     k = 2
     while number > 1 and k * k <= number:
         while number % k == 0:
-            result += [k]
+            _result.append(k)
             number //= k
         k += 1
     if number > 1:
-        result += [number]
+        _result.append(number)
 
-    return result
+    return _result

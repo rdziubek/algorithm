@@ -1,3 +1,8 @@
+"""
+
+O(log n)
+"""
+
 from gcd_recursive import gcd
 
 

@@ -4,6 +4,9 @@ NOTE:
     When it is such, returned number is multiplied by its base
     besides squaring it.
 
+    Result starts at 1 because any log base `base` of `result`
+    yields non-negative.
+
 O(log n)
 """
 

@@ -16,18 +16,18 @@ def merge(array, left, middle, right):
 
     while i < middle and j < right:
         if array[i] <= array[j]:
-            merged += [array[i]]
+            merged.append(array[i])
             i += 1
         else:
-            merged += [array[j]]
+            merged.append(array[j])
             j += 1
 
     while i < middle:
-        merged += [array[i]]
+        merged.append(array[i])
         i += 1
 
     while j < right:
-        merged += [array[j]]
+        merged.append(array[j])
         j += 1
 
     for i in range(len(merged)):
