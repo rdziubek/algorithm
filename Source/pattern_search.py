@@ -16,9 +16,9 @@ def search(text, pattern):
                 break
 
         if found:
-            results += [i]
+            results.append(i)
 
     return results
 
 
-print(search('karykatura', 'ka'))
+print(search(list('karykatura'), list('ka')))

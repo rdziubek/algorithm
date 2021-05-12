@@ -5,8 +5,6 @@ O(n)
 
 
 def cipher(key, text):
-    result = []
-
     for i in range(len(text)):
         candidate = ord(text[i]) + key
 
@@ -15,9 +13,9 @@ def cipher(key, text):
         elif candidate < ord('a'):
             candidate += 26
 
-        result += [chr(candidate)]
+        text[i] = chr(candidate)
 
-    return result
+    return text
 
 
-print(cipher(2, 'xyz'))
+print(cipher(2, list('xyz')))

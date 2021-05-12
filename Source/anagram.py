@@ -21,4 +21,4 @@ def anagram(word, word2):
     return True
 
 
-print(anagram('arbuz', 'burza'))
+print(anagram(list('arbuz'), list('burza')))

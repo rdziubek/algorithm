@@ -12,4 +12,4 @@ def palindrome(word):
     return True
 
 
-print(palindrome('kajak'))
+print(palindrome(list('kajak')))
