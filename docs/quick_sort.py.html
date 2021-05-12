@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>quick_sort.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #0000ff;}
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+quick_sort.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0">&quot;&quot;&quot; 
+<a name="l2"><span class="ln">2    </span></a>1. Arrange elements relative to the pivot. 
+<a name="l3"><span class="ln">3    </span></a>2. Execute quick-sort on left and right sides of the array (pivot denotes the middle). 
+<a name="l4"><span class="ln">4    </span></a> 
+<a name="l5"><span class="ln">5    </span></a>NOTE: 
+<a name="l6"><span class="ln">6    </span></a>    `left &lt; j` and `right &gt; i` checks make sure there is something to further sort. 
+<a name="l7"><span class="ln">7    </span></a>    `right` is inclusive. 
+<a name="l8"><span class="ln">8    </span></a> 
+<a name="l9"><span class="ln">9    </span></a>    Recursive calls use `j` and `i` indices instead of a middle index (used in merge-sort). 
+<a name="l10"><span class="ln">10   </span></a> 
+<a name="l11"><span class="ln">11   </span></a>O(n²) 
+<a name="l12"><span class="ln">12   </span></a>not stable 
+<a name="l13"><span class="ln">13   </span></a>in-place 
+<a name="l14"><span class="ln">14   </span></a>&quot;&quot;&quot;</span>
+<a name="l15"><span class="ln">15   </span></a>
+<a name="l16"><span class="ln">16   </span></a>
+<a name="l17"><span class="ln">17   </span></a><span class="s2">def </span>sort(array, left, right):
+<a name="l18"><span class="ln">18   </span></a>    i = left
+<a name="l19"><span class="ln">19   </span></a>    j = right
+<a name="l20"><span class="ln">20   </span></a>
+<a name="l21"><span class="ln">21   </span></a>    pivot = array[(left + right) // <span class="s3">2</span>]
+<a name="l22"><span class="ln">22   </span></a>
+<a name="l23"><span class="ln">23   </span></a>    <span class="s2">while </span>i &lt;= j:
+<a name="l24"><span class="ln">24   </span></a>        <span class="s2">while </span>array[i] &lt; pivot:
+<a name="l25"><span class="ln">25   </span></a>            i += <span class="s3">1</span>
+<a name="l26"><span class="ln">26   </span></a>        <span class="s2">while </span>array[j] &gt; pivot:
+<a name="l27"><span class="ln">27   </span></a>            j -= <span class="s3">1</span>
+<a name="l28"><span class="ln">28   </span></a>
+<a name="l29"><span class="ln">29   </span></a>        <span class="s2">if </span>i &lt;= j:
+<a name="l30"><span class="ln">30   </span></a>            array[i], array[j] = array[j], array[i]
+<a name="l31"><span class="ln">31   </span></a>            i += <span class="s3">1</span>
+<a name="l32"><span class="ln">32   </span></a>            j -= <span class="s3">1</span>
+<a name="l33"><span class="ln">33   </span></a>
+<a name="l34"><span class="ln">34   </span></a>    <span class="s2">if </span>left &lt; j:
+<a name="l35"><span class="ln">35   </span></a>        sort(array, left, j)
+<a name="l36"><span class="ln">36   </span></a>    <span class="s2">if </span>right &gt; i:
+<a name="l37"><span class="ln">37   </span></a>        sort(array, i, right)
+<a name="l38"><span class="ln">38   </span></a>
+<a name="l39"><span class="ln">39   </span></a>    <span class="s2">return </span>array
+<a name="l40"><span class="ln">40   </span></a></pre>
+</body>
+</html>
