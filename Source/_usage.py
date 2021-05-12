@@ -32,9 +32,51 @@ import selection_sort
 import sieve_of_eratosthenes
 import transposition_cipher
 
-anagram.anagram(
-    word1='arbuz',
-    word2='burza'
+
+""" SORTING """
+
+bubble_sort.sort(
+    array=[3, 2, 11, -1, 0]
+)
+
+array = [0.48, 0.27, 0.12, 0.21, 0.43, 0.25]
+bucket_sort.sort(
+    array,
+    max_value=max(array)
+)
+
+insertion_sort.sort(
+    array=[3, 2, 11, -1, 0]
+)
+
+array = [3, 2, 11, -1, 0]
+merge_sort.sort(
+    array,
+    left=0,
+    right=len(array)
+)
+
+array = [3, 2, 11, -1, 0]
+quick_sort.sort(
+    array,
+    left=0,
+    right=len(array) - 1
+)
+
+selection_sort.sort(
+    array=[3, 2, 11, -1, 0]
+)
+
+lexicographic_order.order(
+    words=['aab', 'aaa', 'aa', 'aaa']
+)
+
+
+""" SEARCHING """
+
+pattern_search.search(
+    text=list('karykatura'),
+    pattern=list('ka')
 )
 
 bisection_graph.bisect(
@@ -48,14 +90,16 @@ bisection_search.search(
     target=3
 )
 
-bubble_sort.sort(
-    array=[3, 2, 11, -1, 0]
+
+""" STRING OPS """
+
+anagram.anagram(
+    word1='arbuz',
+    word2='burza'
 )
 
-array = [0.48, 0.27, 0.12, 0.21, 0.43, 0.25]
-bucket_sort.sort(
-    array,
-    max_value=max(array)
+palindrome.palindrome(
+    word=list('kajak')
 )
 
 caesar.cipher(
@@ -63,42 +107,20 @@ caesar.cipher(
     text=list('xyz')
 )
 
-change_making.change(
-    amount=6
+transposition_cipher.cipher(
+    text=list('SLOWO')
 )
+
+
+""" NUMERAL SYSTEMS """
 
 dec_to_base.change_base(
     number=10,
     base=2
 )
 
-exponentiation_by_squaring.exponentiate(
-    base=2,
-    power=10
-)
 
-fibonacci_iterative.fibonacci(
-    count=5
-)
-
-fibonacci_recursive.fibonacci(
-    count=5
-)
-
-insertion_sort.sort(
-    array=[3, 2, 11, -1, 0]
-)
-
-lexicographic_order.order(
-    words=['aab', 'aaa', 'aa', 'aaa']
-)
-
-array = [3, 2, 11, -1, 0]
-merge_sort.sort(
-    array,
-    left=0,
-    right=len(array)
-)
+""" NUMERIC OPTIMISATION """
 
 gcd_iterative.gcd(
     a=5,
@@ -120,42 +142,41 @@ lcm_recursive.lcm(
     b=10
 )
 
-palindrome.palindrome(
-    word=list('kajak')
-)
-
-pattern_search.search(
-    text=list('karykatura'),
-    pattern=list('ka')
-)
-
-perfect_number.is_perfect(
-    number=6
-)
-
 prime_factorisation.factorise(
     number=100
 )
 
-prime_number.is_prime(
-    number=13
+change_making.change(
+    amount=6
 )
 
-array = [3, 2, 11, -1, 0]
-quick_sort.sort(
-    array,
-    left=0,
-    right=len(array) - 1
+exponentiation_by_squaring.exponentiate(
+    base=2,
+    power=10
 )
 
-selection_sort.sort(
-    array=[3, 2, 11, -1, 0]
+
+""" SEQUENCES """
+
+fibonacci_iterative.fibonacci(
+    count=5
+)
+
+fibonacci_recursive.fibonacci(
+    count=5
 )
 
 sieve_of_eratosthenes.sieve(
     limit=13
 )
 
-transposition_cipher.cipher(
-    text=list('SLOWO')
+
+""" NUMBER THEORY """
+
+prime_number.is_prime(
+    number=13
+)
+
+perfect_number.is_perfect(
+    number=6
 )

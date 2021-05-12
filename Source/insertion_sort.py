@@ -14,6 +14,7 @@ NOTE:
 
 O(n²)
 stable
+in-place
 """
 
 

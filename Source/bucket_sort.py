@@ -21,6 +21,7 @@ NOTE:
     Buckets are emptied so that no gaps / merged values are produced.
 
 complexity and stability depends on sort used
+out-of-place
 """
 
 import insertion_sort

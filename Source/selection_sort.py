@@ -7,6 +7,7 @@ NOTE:
 
 O(n²)
 not stable
+in-place
 """
 
 

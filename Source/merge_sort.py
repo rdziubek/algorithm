@@ -5,6 +5,7 @@ NOTE:
 
 O(n log n)
 stable
+out-of-place
 """
 
 

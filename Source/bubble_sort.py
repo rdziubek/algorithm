@@ -2,6 +2,7 @@
 
 O(n²)
 stable
+in-place
 """
 
 
