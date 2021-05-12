@@ -1,37 +1,19 @@
 """
-    KRYPT
-    OANAL   ;   2, 1, 4, 0, 3   ->  YNARAZTLKOIPA
-    IZA
+    SLOWO   ->  LSWOO
 
-O(n) — matrix transposition (√n by √n)
+    Letters adjacent to each other are swapped; if no adjacent found, left as is
+
+O(n)
 """
 
 
-def cipher(key: list, text):
-    cols = len(key)
+def cipher(text):
+    for i in range(1, len(text), 2):
+        preceding = text[i - 1]
+        text[i - 1] = text[i]
+        text[i] = preceding
 
-    if len(text) % cols != 0:
-        rows = len(text) // cols + 1
-    else:
-        rows = len(text) // cols
-
-    matrix = [['' for _ in range(cols)] for _ in range(rows)]
-
-    k = 0
-    for row in range(rows):
-        for col in range(cols):
-            if k < len(text):
-                matrix[row][col] = text[k]
-                k += 1
-            else:
-                matrix[row][col] = ''
-
-    result = []
-    for col in range(cols):
-        for row in range(rows):
-            if matrix[row][key[col]] != '':
-                result += matrix[row][key[col]]
-    return result
+    return text
 
 
-print(cipher([2, 1, 4, 0, 3], 'KRYPTOANALIZA'))
+print(cipher(list('SLOWO')))
