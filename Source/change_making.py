@@ -19,6 +19,3 @@ def change(amount):
         count += 1
 
     return count
-
-
-print(change(6))

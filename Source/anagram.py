@@ -4,13 +4,13 @@ O(m + n)
 """
 
 
-def anagram(word, word2):
-    if len(word) != len(word2):
+def anagram(word1, word2):
+    if len(word1) != len(word2):
         return False
 
     counts = [0] * 128
-    for i in range(len(word)):
-        counts[ord(word[i])] += 1
+    for i in range(len(word1)):
+        counts[ord(word1[i])] += 1
     for i in range(len(word2)):
         counts[ord(word2[i])] -= 1
 
@@ -19,6 +19,3 @@ def anagram(word, word2):
             return False
 
     return True
-
-
-print(anagram(list('arbuz'), list('burza')))

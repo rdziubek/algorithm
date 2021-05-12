@@ -34,4 +34,8 @@ def cipher(key: list, text):
     return result
 
 
-print(cipher([2, 1, 4, 0, 3], 'KRYPTOANALIZA'))
+"""EVALUATION"""
+cipher(
+    key=[2, 1, 4, 0, 3],
+    text='KRYPTOANALIZA'
+)

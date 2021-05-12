@@ -16,4 +16,8 @@ def change_base(number: list, base):
     return result
 
 
-print(change_base(list('101'), 2))
+"""EVALUATION"""
+change_base(
+    number=list('101'),
+    base=2
+)

@@ -29,6 +29,3 @@ def sort(array):
         array[j + 1] = inserted
 
     return array
-
-
-print(sort([3, 2, 11, -1, 0]))

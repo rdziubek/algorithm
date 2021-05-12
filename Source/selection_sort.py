@@ -21,6 +21,3 @@ def sort(array):
         array[i], array[min_index] = array[min_index], array[i]
 
     return array
-
-
-print(sort([3, 2, 11, -1, 0]))

@@ -13,6 +13,3 @@ def fibonacci(count):
         return 1
 
     return fibonacci(count - 1) + fibonacci(count - 2)
-
-
-print(fibonacci(5))

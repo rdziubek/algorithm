@@ -25,6 +25,3 @@ def is_perfect(number):
         i += 1
 
     return total == number
-
-
-print(is_perfect(6))

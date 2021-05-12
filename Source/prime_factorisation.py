@@ -4,19 +4,16 @@ O(√n)
 """
 
 
-def factorise(n):
+def factorise(number):
     result = []
 
     k = 2
-    while n > 1 and k * k <= n:
-        while n % k == 0:
+    while number > 1 and k * k <= number:
+        while number % k == 0:
             result += [k]
-            n //= k
+            number //= k
         k += 1
-    if n > 1:
-        result += [n]
+    if number > 1:
+        result += [number]
 
     return result
-
-
-print(factorise(100))

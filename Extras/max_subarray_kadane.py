@@ -10,4 +10,7 @@ def kadane(array):
     return max_so_far
 
 
-print(kadane([0, 1, -10, 1, 2, 3]))
+"""EVALUATION"""
+kadane(
+    array=[0, 1, -10, 1, 2, 3]
+)

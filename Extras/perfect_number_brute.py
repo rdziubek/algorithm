@@ -8,4 +8,7 @@ def is_perfect(number):
     return total == number
 
 
-print(is_perfect(6))
+"""EVALUATION"""
+is_perfect(
+    number=6
+)

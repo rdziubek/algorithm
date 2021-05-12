@@ -35,4 +35,7 @@ def merge(left, right):
     return merged
 
 
-print(sort([3, 2, 11, -1, 0]))
+"""EVALUATION"""
+sort(
+    array=[3, 2, 11, -1, 0]
+)

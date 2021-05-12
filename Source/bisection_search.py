@@ -19,6 +19,3 @@ def search(array, target):
             return middle
 
     return -1
-
-
-print(search([-1, 0, 2, 3, 11], 3))

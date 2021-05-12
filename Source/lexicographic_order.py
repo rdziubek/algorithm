@@ -8,8 +8,5 @@ complexity and stability depends on sort used
 import bubble_sort
 
 
-def order(array):
-    return bubble_sort.sort(array)
-
-
-print(order(['aab', 'aaa', 'aa', 'aaa']))
+def order(words):
+    return bubble_sort.sort(words)

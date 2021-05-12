@@ -10,4 +10,7 @@ def fibonacci_nth(count):
         a = b - a
 
 
-print(fibonacci_nth(5))
+"""EVALUATION"""
+fibonacci_nth(
+    count=5
+)

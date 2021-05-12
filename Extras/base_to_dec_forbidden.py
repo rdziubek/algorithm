@@ -7,4 +7,8 @@ def change_base(number: str, base):
     return result
 
 
-print(change_base('101', 2))
+"""EVALUATION"""
+change_base(
+    number='101',
+    base=2
+)

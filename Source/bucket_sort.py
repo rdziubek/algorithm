@@ -15,6 +15,9 @@ NOTE:
 
     Elements 'overflowing' the bucket size are put into the last container.
 
+    `max_value` parameter is dependent on the array though its calculation should not be reliant
+    on the algorithm, hence the separation.
+
 complexity and stability depends on sort used
 """
 
@@ -42,7 +45,3 @@ def sort(array, max_value):
     for i in range(len(array)):
         result += buckets[i]
     return result
-
-
-array = [0.48, 0.27, 0.12, 0.21, 0.43, 0.25]
-print(sort(array, max(array)))

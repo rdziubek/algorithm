@@ -16,6 +16,3 @@ def cipher(key, text):
         text[i] = chr(candidate)
 
     return text
-
-
-print(cipher(2, list('xyz')))

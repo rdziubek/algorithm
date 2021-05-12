@@ -36,7 +36,3 @@ def sort(array, left, right):
         sort(array, i, right)
 
     return array
-
-
-array = [3, 2, 11, -1, 0]
-print(sort(array, 0, len(array) - 1))

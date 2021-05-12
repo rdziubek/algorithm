@@ -19,6 +19,3 @@ def exponentiate(base, power):
         power //= 2
 
     return result
-
-
-print(exponentiate(2, 10))

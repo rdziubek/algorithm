@@ -1,4 +1,6 @@
 """
+NOTE:
+    `limit`'s value denote until what prime (starting from 0) elements are sieved through.
 
 O(n log n)
 """
@@ -20,6 +22,3 @@ def sieve(limit):
             result += [i]
 
     return result
-
-
-print(sieve(13))

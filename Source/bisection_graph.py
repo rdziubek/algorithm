@@ -24,6 +24,3 @@ def bisect(a, b, error):
 
 def f(x):
     return x + 2.1
-
-
-print(bisect(-4, 4, 0.001))

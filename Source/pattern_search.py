@@ -19,6 +19,3 @@ def search(text, pattern):
             results.append(i)
 
     return results
-
-
-print(search(list('karykatura'), list('ka')))

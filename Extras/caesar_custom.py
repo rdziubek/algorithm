@@ -4,7 +4,7 @@ O(mn)
 """
 
 
-def cipher_custom(key, alphabet, text):
+def cipher(key, alphabet, text):
     result = []
 
     for i in range(len(text)):
@@ -15,4 +15,9 @@ def cipher_custom(key, alphabet, text):
     return result
 
 
-print(cipher_custom(2, list('abcdefghijklmnopqrstuvwxyz'), list('xyz')))
+"""EVALUATION"""
+cipher(
+    key=2,
+    alphabet=list('abcdefghijklmnopqrstuvwxyz'),
+    text=list('xyz')
+)

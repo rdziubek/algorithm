@@ -14,8 +14,10 @@ def force_find(array):
                 biggest_start = i
                 biggest_end = j
 
-    print(biggest_start, biggest_end)
-    return biggest
+    return biggest, biggest_start, biggest_end
 
 
-print(force_find([0, 1, -10, 1, 2, 3]))
+"""EVALUATION"""
+force_find(
+    array=[0, 1, -10, 1, 2, 3]
+)

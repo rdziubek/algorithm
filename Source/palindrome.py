@@ -10,6 +10,3 @@ def palindrome(word):
             return False
 
     return True
-
-
-print(palindrome(list('kajak')))

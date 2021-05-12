@@ -16,6 +16,3 @@ def fibonacci(count):
         a = b - a
 
     return result
-
-
-print(fibonacci(5))

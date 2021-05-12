@@ -4,4 +4,8 @@ def change_base(number, base):
         print(number % base)
 
 
-change_base(10, 2)
+"""EVALUATION"""
+change_base(
+    number=10,
+    base=2
+)

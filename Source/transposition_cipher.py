@@ -14,6 +14,3 @@ def cipher(text):
         text[i] = preceding
 
     return text
-
-
-print(cipher(list('SLOWO')))
