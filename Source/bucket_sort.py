@@ -3,7 +3,7 @@
 2. Make buckets.
 3. Put into buckets.
 4. Sort each bucket.
-5. Empty buckets.
+5. "Pour out" buckets.
 
 NOTE:
     `array[i] / size` is not floored (by floor division, as opposed to
@@ -28,14 +28,10 @@ import insertion_sort
 
 
 def sort(array, max_value):
-    span = max_value / len(array)
-
-    buckets = []
-    for _ in range(len(array)):
-        buckets.append([])
+    buckets = [[] for _ in range(len(array))]
 
     for i in range(len(array)):
-        j = int(array[i] / span)
+        j = int(array[i] / (max_value / len(array)))
         if j != len(array):
             buckets[j].append(array[i])
         else:
