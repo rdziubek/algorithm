@@ -1,4 +1,6 @@
 """
+Finds largest gcd(a, b) ∈ ℤ such that
+gcd(a, b)|a ∧ gcd(a, b)|b.
 
 O(log n)
 """

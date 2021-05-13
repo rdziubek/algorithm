@@ -1,4 +1,6 @@
 """
+Finds smallest lcm(a, b) ∈ ℤ such that
+a|lcm(a, b) ∧ b|lcm(a, b).
 
 O(log n)
 """
