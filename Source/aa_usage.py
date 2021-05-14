@@ -49,11 +49,8 @@ insertion_sort.sort(
     array=[3, 2, 11, -1, 0]
 )
 
-array = [3, 2, 11, -1, 0]
 merge_sort.sort(
-    array,
-    left=0,
-    right=len(array)
+    array=[3, 2, 11, -1, 0]
 )
 
 array = [3, 2, 11, -1, 0]
