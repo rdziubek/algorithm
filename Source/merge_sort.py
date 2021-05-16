@@ -52,5 +52,4 @@ def sort(array):
         j += 1
         k += 1
 
-    print(array)
     return array
