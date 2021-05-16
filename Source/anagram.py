@@ -5,9 +5,6 @@ O(m + n)
 
 
 def anagram(word1, word2):
-    if len(word1) != len(word2):
-        return False
-
     counts = [0] * 128
     for i in range(len(word1)):
         counts[ord(word1[i])] += 1

@@ -91,8 +91,8 @@ bisection_search.search(
 """ STRING OPS """
 
 anagram.anagram(
-    word1='arbuz',
-    word2='burza'
+    word1=list('arbuz'),
+    word2=list('burza')
 )
 
 palindrome.palindrome(
