@@ -14,7 +14,7 @@ def change_base(number, base):
 
     while number > 0:
         _temp = _stack
-        _stack = [_returned[number % base]]
+        _stack[0] = _returned[number % base]
         _stack.extend(_temp)
         number //= base
 
