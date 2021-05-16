@@ -25,10 +25,10 @@ gcd_recursive.py</font>
 <a name="l7"><span class="ln">7    </span></a>
 <a name="l8"><span class="ln">8    </span></a>
 <a name="l9"><span class="ln">9    </span></a><span class="s2">def </span>gcd(a, b):
-<a name="l10"><span class="ln">10   </span></a>    <span class="s2">if </span>b != <span class="s3">0</span>:
-<a name="l11"><span class="ln">11   </span></a>        <span class="s2">return </span>gcd(b, a % b)
+<a name="l10"><span class="ln">10   </span></a>    <span class="s2">if </span>b == <span class="s3">0</span>:
+<a name="l11"><span class="ln">11   </span></a>        <span class="s2">return </span>a
 <a name="l12"><span class="ln">12   </span></a>
-<a name="l13"><span class="ln">13   </span></a>    <span class="s2">return </span>a
+<a name="l13"><span class="ln">13   </span></a>    <span class="s2">return </span>gcd(b, a % b)
 <a name="l14"><span class="ln">14   </span></a></pre>
 </body>
 </html>
