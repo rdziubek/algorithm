@@ -26,12 +26,12 @@ def sort(array):
     for i in range(mid, len(array)):
         right.append(array[i])
 
+    sort(left)
+    sort(right)
+
     i = 0
     j = 0
     k = 0
-
-    sort(left)
-    sort(right)
 
     while i < len(left) and j < len(right):
         if left[i] < right[j]:
@@ -52,4 +52,5 @@ def sort(array):
         j += 1
         k += 1
 
+    print(array)
     return array
