@@ -2,7 +2,9 @@
 1. Return (let go) if none to sort
 2. Divide
 3. Repeat recursively
-4. Sort by overwriting (by a reference) original
+4. Sort into original
+    a. Compare (both sides' elements)
+    b. Bottom out (remaining both sides' elements)
 
 O(n log n)
 stable
