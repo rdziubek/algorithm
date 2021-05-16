@@ -19,7 +19,7 @@ def is_perfect(number):
     i = 2
     while i * i <= number:
         if number % i == 0:
-            total += i + number // i
+            total += i
             if number // i != i:
                 total += number // i
         i += 1
