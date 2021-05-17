@@ -13,6 +13,9 @@ NOTE:
         'a' <= character <= 'z': 'a'
         'A' <= character <= 'Z': 'A'
 
+
+    Following implementation considers single case only.
+
 O(n)
 """
 
