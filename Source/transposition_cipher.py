@@ -1,7 +1,8 @@
 """
     SLOWO   ->  LSWOO
 
-    Letters adjacent to each other are swapped; if no adjacent found, left as is
+    Letters adjacent to each other are swapped;
+    if no adjacent found, left as is.
 
 O(n)
 """

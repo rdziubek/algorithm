@@ -1,13 +1,13 @@
 """
 1. Replace each character:
-    (character + key) % 26
+    (character + key) mod 26
 
 NOTE:
     For the formula to be applied, ASCII needs to be zeroed out by subtracting the value
     of either 'a' or 'A' (1), depending on the case (2). (and later adding the value back)
 
     (1)
-        (character + key - 'a'|'A') % 26 + 'a'|'A'
+        (character + key - 'a'|'A') mod 26 + 'a'|'A'
 
     (2)
         'a' <= character <= 'z': 'a'

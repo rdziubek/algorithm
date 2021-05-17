@@ -1,5 +1,6 @@
 """
-Based on the definition a1 = 1, a2 = 1.
+Based on the definition a₁ = 1, a₂ = 1
+(indexed from 1).
 
 NOTE:
     Only gives n-th number

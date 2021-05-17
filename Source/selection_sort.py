@@ -1,9 +1,9 @@
 """
-Each iteration, smallest element is found (and hence the quadratic O).
+Each iteration, smallest element is found (and hence the quadratic big O).
 
 NOTE:
-    Looping through `len() - 1` to avoid redundant last call which would
-    swap the last element with itself.
+    Looping through `len() - 1` avoids redundant last call
+    swapping the last element with itself.
 
 O(n²)
 not stable

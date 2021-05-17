@@ -1,6 +1,10 @@
 """
 NOTE:
-    `limit`'s value denote until what prime (starting from 0) elements are sieved through.
+    `limit`'s value denotes until which prime
+    the elements are sieved through.
+
+    Array of size [0..`limit` + 1] is allocated.
+    (Elements' values correspond to their indices.)
 
 O(n log n)
 """

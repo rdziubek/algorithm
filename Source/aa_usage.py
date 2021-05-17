@@ -5,11 +5,11 @@ NOTE:
 """
 
 import anagram
-import bisection_graph
+import bisection_root_finding
 import bisection_search
 import bubble_sort
 import bucket_sort
-import caesar
+import caesar_cipher
 import change_making
 import dec_to_base
 import exponentiation_by_squaring
@@ -76,7 +76,7 @@ pattern_search.search(
     pattern=list('ka')
 )
 
-bisection_graph.bisect(
+bisection_root_finding.bisect(
     a=-4,
     b=4,
     error=0.001
@@ -99,7 +99,7 @@ palindrome.palindrome(
     word=list('kajak')
 )
 
-caesar.cipher(
+caesar_cipher.cipher(
     key=2,
     text=list('xyz')
 )
