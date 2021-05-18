@@ -11,7 +11,8 @@ import bubble_sort
 import bucket_sort
 import caesar_cipher
 import change_making
-import dec_to_base
+import dec_to_base_iterative
+import dec_to_base_recursive
 import exponentiation_by_squaring
 import fibonacci_iterative
 import fibonacci_recursive
@@ -111,9 +112,16 @@ transposition_cipher.cipher(
 
 """ NUMERAL SYSTEMS """
 
-dec_to_base.change_base(
+dec_to_base_iterative.change_base(
     number=10,
     base=2
+)
+
+array = []
+dec_to_base_recursive.change_base(
+    number=10,
+    base=2,
+    callback=array
 )
 
 
